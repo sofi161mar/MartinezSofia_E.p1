@@ -18,7 +18,7 @@ public class Main {
 
                 switch (opcion) {
                     case 1:
-                        tienda.mostrarInventario();
+                        tienda.mostrarInformacion();
                         break;
                     case 2:
                         System.out.print("Ingrese el nombre de la especie: ");
