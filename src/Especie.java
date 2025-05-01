@@ -35,3 +35,35 @@ public boolean vender(int cantidad) {
         return false;
     }
 }
+
+public boolean comprar(int cantidad){
+    if (cantidadDisponible<Cantidad){
+        cantidadDisponible -= cantidad;
+        totalVendidas += cantidad;
+        System.out.println("Compra: " + cantidad + " " + nombre);
+        return true;
+    } else {
+        System.out.println("No hay suficientes " + nombre);
+        return false;
+    }
+}
+
+
+public Especie buscarEspecie (String pNombreEspecie){
+    Especie buscado= null;
+    if (pNombresEspecie.equals (especie1.darNombre()))
+    {
+    buscado=especie1;
+    }
+    else if (pNombreEspecie.equals(especie2.darNombre()))
+    {   buscado=especie2;
+    }
+    else if  (pNombreEspecie.equals(especie3.darNombre()))
+    {
+    buscado=especie3;
+    }
+    else if  (pNombreEspecie.equals(especie4.darNombre()))
+    { 
+    buscado=especie4;
+    }
+return buscado;
